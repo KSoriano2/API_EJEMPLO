@@ -13,5 +13,7 @@ export const conmysql = createPool({
     user: BD_USER,
     password: BD_PASSWORD,
     port: BD_PORT,
-    ssl: true
+    ssl: {
+        rejectUnauthorized: false
+    }
 })
